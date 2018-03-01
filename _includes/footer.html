@@ -1,0 +1,38 @@
+<footer class="container mt-5 mb-5 pt-5 pb-5">
+  <div class="row">
+    <div class="col-md">
+      <h5>Exchanges</h5>
+      <ul class="list-group list-footer">
+        <li><a href="https://bittrex.com/Market/Index?MarketName=BTC-RDD" target="_blank">Bittrex</a></li>
+        <li><a href="https://yobit.net/en/trade/RDD/BTC" target="_blank">Yobit</a></li>
+        <li><a href="https://www.cryptopia.co.nz/Exchange/?market=RDD_BTC" target="_blank">Cryptopia</a></li>
+        <li><a href="https://bleutrade.com/exchange/RDD/BTC" target="_blank">BleuTrade</a></li>
+        <li><a href="https://bitsquare.io/" target="_blank">Bitsquare</a></li>
+        <li><a href="https://shapeshift.io/#/coins" target="_blank">Shapeshift</a></li>
+      </ul>
+    </div>
+    <div class="col-md">
+      <h5>More resources</h5>
+      <ul class="list-group list-footer">
+        <li><a href="{% link brandassets.html %}">Brand Assets</a></li>
+        <li><a href="{% link privacypolicy.html %}">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="col-md">
+      <h5>Social</h5>
+      {% include social.html %}
+    </div>
+    <div class="col-md">
+      <h5 class="">Specifications</h5>
+        <ul class="list-group list-footer small">
+          <li>Algorithm: Proof-of-Stake-Velocity</li>
+          <li>Total Supply: ~27 billion RDD at the end of PoW</li>
+          <li>Interest rate: 5% inflation yearly</li>
+          <li>Block Time: 60 Seconds</li>
+          <li>Currency Code: RDD</li>
+          <li>Currency Symbol: Ɍ</li>
+        </ul>
+    </div>
+  </div>
+  <div class="copyright mt-5 small text-center">Copyright © Reddcoin {{ site.time | date: '%Y' }}</div>
+</footer>

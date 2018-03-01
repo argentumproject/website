@@ -1,0 +1,15 @@
+title: Reddcoin Social Currency - Official website
+email: support@reddcoin.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Reddcoin is the social currency that enriches people’s social lives and makes digital currency easy for the general public.
+baseurl: "website"
+url: "https://reddcoin-project.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+sass:
+    sass_dir: _sass
+    style: compressed
