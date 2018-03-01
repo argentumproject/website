@@ -18,6 +18,27 @@
   }
 }
 
+#color-samples-container{
+  font-size:15px;
+  .color-preview{
+    border-radius: 10px;
+    width: 20px;
+    height: 78px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 6px
+  }
+  .color-codes{
+    tr,td{
+      font-weight: bold;
+      padding: 0px;
+    }
+    td.value{
+      padding-left: 20px;
+    }
+  }
+}
+
 .getRedcoin {
   .list-group {
     max-width: 400px;

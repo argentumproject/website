@@ -2,6 +2,75 @@
 layout: page
 title: Brand Assets
 permalink: /brand-assets/
+colors:
+  - - 245, 126, 32
+    - 0, 62, 100, 0
+    - 27, 87, 245
+    - f57e21
+  - - 51, 153, 204
+    - 73, 26, 5, 0
+    - 200, 75, 80
+    - 3399cc
+  - - 255, 204, 0
+    - 1, 19, 100, 0
+    - 48, 100, 100
+    - ffcc00
+  - - 243, 110, 80
+    - 0, 71, 71, 0
+    - 11, 67, 95
+    - f36e50
+  - - 0, 153, 204
+    - 78, 24, 6, 0
+    - 195, 10, 80
+    - 0099cc
+  - - 102, 204, 51
+    - 61, 0, 100, 0
+    - 100, 75, 80
+    - 66cc33
+  - - 240, 81, 73
+    - 0, 84, 73, 0
+    - 3, 70, 94
+    - f05149
+  - - 51, 102, 153
+    - 86, 60, 17, 2
+    - 210, 67, 60
+    - 336699
+  - - 51, 153, 51
+    - 80, 16, 100, 3
+    - 120, 67, 60
+    - 339933
+  - - 221, 66, 37
+    - 6, 89, 100, 2
+    - 9, 83, 87
+    - dd4225
+  - - 0, 102, 153
+    - 93, 58, 18, 2
+    - 200, 100, 60
+    - 006699
+  - - 0, 153, 51
+    - 85, 14, 100, 2
+    - 140, 100, 60
+    - 009933
+  - - 237, 28, 36
+    - 0, 100, 100, 0
+    - 358, 88, 93
+    - ed1c24
+  - - 51, 51, 153
+    - 96, 95, 0, 0
+    - 240, 67, 60
+    - 333399
+  - - 204, 52, 51
+    - 14, 94, 88, 4
+    - 0, 75, 80
+    - cc3433
+  - - 191, 32, 37
+    - 16, 100, 100, 9
+    - 358, 83, 75
+    - bf2025
+  - - 165, 28, 32
+    - 21, 100, 100, 20
+    - 358, 83, 65
+    - a51c20
 ---
 
 <p>You can use these assets on your app (website or mobile app) without pre-approval provided you follow these basic guidelines. Use of Reddcoin brands in ways not expressly covered by this document is not allowed without prior written consent from Reddcoin.</p>
@@ -10,7 +79,41 @@ permalink: /brand-assets/
 
 <h2 class="mt-5">Colors</h2>
 
-<img src="{{ "/assets/images/reddcoin-colors.png" | relative_url }}" alt="Reddcoin Colors">
+<div class="row">
+  <div class="col-12">
+    <div id="color-samples-container">
+      <div class="row">
+        {% for color in page.colors %}
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="color-preview" style="background-color:#{{ color[3] }}"></div>
+          <div class="color-codes">
+            <table>
+              <tbody>
+                <tr>
+                  <td>RGB:</td>
+                  <td class="value">{{ color[0] }}</td>
+                </tr>
+                <tr>
+                  <td>CMYK:</td>
+                  <td class="value">{{ color[1] }}</td>
+                </tr>
+                <tr>
+                  <td>HSB:</td>
+                  <td class="value">{{ color[2] }}</td>
+                </tr>
+                <tr>
+                  <td>Hex#:</td>
+                  <td class="value">{{ color[3] }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 
 <h2 class="mt-5">Spacing considerations</h2>
 
